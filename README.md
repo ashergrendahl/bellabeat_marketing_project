@@ -11,33 +11,31 @@ In this project I assume the role of a junior data analyst at Bellabeat where I 
 - Imported the dataset into a SQL Server database and verified row counts.
 - Cleaned and standardized data (handled NULLs, formatted date fields).
 - Created a new table view that contained engagement groups of users based on how many times they have used the tracking features that the device has. 
-- Created box plots in R to show the correlation of people who track data more often and living a heathier lifestyle. 
+- Created box plots in R to show the correlation of people who track data more often and living a heathier lifestyle.
+- Created a presentation in Google Slides
 
 ---
 
 ## Files in this repo
-- `CrimeAnalysis_Report.pdf` — project report and summary (screenshots included)  
-- `CrimeAnalysis_Lynchburg2024.pbix` — Power BI file (download to open in Power BI Desktop)  
-- `sql/queries.sql` — key SQL queries used (count, group by, cleaning commands)  
-- `screenshots/` — images of the dashboard visuals (Card, Top Offenses, Trend Line)
+- All original datasets and tables created from SQL are included
+- `BellabeatMarketingStrategy.pdf` — project report and summary
+- `BellabeatMatketingAnalysis.sql` — SQL code
+- `bellabeatBoxPlots.R` — R code
 
 ---
 
 ## Key findings (summary)
-- Total incidents recorded: **977**  
-- Top 4 offense types account for the majority of incidents (visualized as Top 4 + Other)  
-- High-incident districts identified; line chart shows seasonal peaks in certain months
+- There is a positive correlation between users who track health metrics and living a healthier lifestyle than users who do not track.  
 
 ---
 
 ## How to run / open
-1. Download `CrimeAnalysis_Lynchburg2024.pbix` and open in Power BI Desktop to view the interactive dashboard.  
-2. Run SQL queries from `sql/queries.sql` against your local `CrimeAnalysis` database (replace table names if different).
+1. Download `FitBitData.zip` and extract all files. Open all of the files in SQL and run the code from `BellabeatMatketingAnalysis.sql`
+2. Download the other .csv files that that came from the analysis in SQL. Import those into RStudio and run `bellabeatBoxPlots.R`
 
 ---
 
 ## Notes and privacy
 - Sensitive or personally-identifying information has been removed/anonymized.  
-- If PBIX is not downloadable due to size, screenshots are in `screenshots/` and the PBIX can be requested.
 
 ---
